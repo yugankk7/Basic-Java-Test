@@ -12,8 +12,8 @@ public class a {
             return 1;
         }
         else {
-            return ncr(n-1, r-1) + ncr(n-1, r);    //
-        }
+            return ncr(n-1, r-1) + ncr(n-1, r);    //This will always break into sums of (nCn)'s and (nC1)'s which will always have the same result, i.e. 1 and n respectively.
+        }                                          //This approach is slower as compared to normal factorial calculation but using DP will chnage that.
     }
 
     public static void main(String[] args) {
