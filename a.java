@@ -12,7 +12,7 @@ public class a {
             return 1;
         }
         else {
-            return ncr(n-1, r-1) + ncr(n-1, r);    //This will always break into sums of (nCn)'s and (nC1)'s which will always have the same result, i.e. 1 and n respectively.
+            return ncr(n-1, r-1) + ncr(n-1, r);    //This will always break into sums of (nCn)'s and (nC0)'s which will always have the same result, i.e. 1.
         }                                          //This approach is slower as compared to normal factorial calculation but the speed can be increased using Dynamic programming.
     }
 
