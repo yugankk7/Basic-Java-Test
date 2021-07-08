@@ -13,7 +13,7 @@ public class a {
         }
         else {
             return ncr(n-1, r-1) + ncr(n-1, r);    //This will always break into sums of (nCn)'s and (nC1)'s which will always have the same result, i.e. 1 and n respectively.
-        }                                          //This approach is slower as compared to normal factorial calculation but using DP will chnage that.
+        }                                          //This approach is slower as compared to normal factorial calculation but the speed can be increased using Dynamic programming.
     }
 
     public static void main(String[] args) {
